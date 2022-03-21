@@ -1,0 +1,148 @@
+.imagePlusParagraph{
+  display: flex;
+  gap:10px;
+  background-color: grey;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.imagePlusParagraph>img{
+  height: 300px;
+  width: 250px;
+}
+h1{
+  display: block;
+  text-align: center;
+  font-size: 45px;
+  background-color: antiquewhite;
+  width: 100%;
+}
+
+.imagePlusParagraph>p{
+  font-weight: bold;
+  height: 300px;
+  width: 500px;
+  
+}
+.daVinci{
+  display: flex;
+  justify-content: space-between;
+  background-color: grey;
+}
+
+.daVinci>img{
+  height: 400px;
+  width: auto;
+  
+}
+
+.greatArtists>img{
+  height: 300px;
+  width: auto;
+  margin-top: 50px;
+  text-align: center;
+  
+  
+}
+.greatArtists{
+  background-color: grey;
+}
+
+.greatArtists>h2{
+  text-align: center;
+}
+
+.greatArtists>p{
+  width: 50%;
+  text-align: justify;
+  margin: 0 auto;
+  
+}
+hr{
+  border:2px solid rebeccapurple;
+}
+#darbasSavarankiskai{
+  background-color: bisque;
+}
+
+#pridetiPaveiksla{
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 25px;
+  background-color: burlywood;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#pridetiPaveiksla>input{
+  width: 350px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.btnDelete{
+  width: 80px;
+  height: 35px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  background-color:red;
+  border: 3px solid black;
+}
+.knopke{
+  background-color: blueviolet;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.morePaintings{
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#redaguotiPaveiksla{
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 25px;
+  background-color: burlywood;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+#redaguotiPaveiksla>input{
+  width: 350px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.formuLaukas{
+  display: flex;
+  justify-content: space-around;
+}
+
+.knopke1{
+  background-color: green;
+  font-size: 25px;
+  font-weight: bold;
+}
+.btnEdit{
+  width: 80px;
+  height: 35px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  background-color:yellow;
+  border: 3px solid black;
+}
