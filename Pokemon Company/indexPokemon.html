@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="PokemonStyle.css">
+    <script src="https://kit.fontawesome.com/9b02a54a02.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animate.css">
+
+    <title>Pokemon Company</title>
+  </head>
+  <body>
+<!--  nav bar starts here-->
+ <div class="navbar-wrapper blue">
+     <div class="container blue">
+               <nav class="navbar navbar-expand-lg navbar-light bg-light navbar navbar-dark bg-dark blue">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Pokemon</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 blue">
+        <li class="nav-item blue">
+          <a class="nav-link active blue" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Pokemons</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">Catch Pokemons</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Loations
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">California</a></li>
+            <li><a class="dropdown-item" href="#">London</a></li>
+             <li><a class="dropdown-item" href="#">Mumbai</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Upcoming Gigs</li>
+            <li><a class="dropdown-item" href="#">Brazil</a></li>
+            <li><a class="dropdown-item" href="#">China</a></li>
+          </ul>
+        </li>
+      </ul>
+     <ul>
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-user-edit"></i> Sign Up</a>
+        </li>
+     </ul>
+    </div>
+  </div>
+</nav>
+         
+         
+     </div>
+ </div>
+<!--    nav bar ends here-->
+
+<!--     carousel starts here-->
+   <div class="container">
+    <div id="my Carousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/1%20Slider%201200x500.jpg" class="d-block w-100" alt="Slide1">
+      <div class="container">
+          <div class="carousel-caption">
+              <h1 class="carousel-text">Be a part of our Team</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, excepturi.</p>
+              <p><a class="btn btn-primary " href="#">Learn more</a></p>
+          </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/2%20Slider%201200x500.jpg" class="d-block w-100" alt="Slide2">
+        <div class="carousel-caption">
+              <h1 class="carousel-text">Some headline</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, excepturi.</p>
+              <p><a class="btn btn-primary " href="#">Learn more</a></p>
+          </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/3%20Slider%201200x500.jpg" class="d-block w-100" alt="Slide3">
+        <div class="carousel-caption">
+              <h1 class="carousel-text">Some headline</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, excepturi.</p>
+              <p><a class="btn btn-primary " href="#">Learn more</a></p>
+          </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </div>
+<!--    carousel ends here-->
+<!--    team section starts here-->
+   <div class="container team ">
+       <div class="row">
+           <div class="col-lg-4">
+               <img src="img/employe%20140x140.jpg" class="img-circle animate__animated animate__wobble" alt="empl1" width="140" height="140">
+               <h2>Team member</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quod perspiciatis mollitia laboriosam consequatur dolorem quaerat, dolores iure maiores deleniti architecto aspernatur, totam beatae impedit excepturi minus earum debitis cupiditate.</p>
+               <p><a href="#"class="btn btn-dark">Read more&raquo;</a></p>
+           </div>
+           <div class="col-lg-4">
+               <img src="img/employ3%20140x140.jpg" class="img-circle animate__animated animate__wobble" alt="empl1" width="140" height="140">
+               <h2>Team member</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quod perspiciatis mollitia laboriosam consequatur dolorem quaerat, dolores iure maiores deleniti architecto aspernatur, totam beatae impedit excepturi minus earum debitis cupiditate.</p>
+               <p><a href="#"class="btn btn-dark">Read more&raquo;</a></p>
+           </div>
+           <div class="col-lg-4">
+               <img src="img/empoy2%20140x140.jpg" class="img-circle animate__animated animate__wobble" alt="empl1" width="140" height="140">
+               <h2>Team member</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quod perspiciatis mollitia laboriosam consequatur dolorem quaerat, dolores iure maiores deleniti architecto aspernatur, totam beatae impedit excepturi minus earum debitis cupiditate.</p>
+               <p><a href="#"class="btn btn-dark">Read more&raquo;</a></p>
+           </div>
+           </div>
+       </div>
+<!--       team section ends here-->
+   <hr class="divider">
+<!--   content section goes here-->
+   <div class="row content">
+       <div class="col-md-7 mickey">
+           <h2 class="content-heading">Greetings words from <span class="text-muted">CEO</span></h2>
+           <p class="content-par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste odio animi repellat, mollitia esse magnam sapiente soluta laudantium, excepturi amet voluptas ipsa nisi eaque praesentium explicabo a architecto alias voluptatem perspiciatis tenetur. Perferendis nobis, atque ex voluptatibus ducimus placeat eum maiores quia. Cum amet, cumque quibusdam voluptatem vero ex temporibus eveniet neque voluptate consequatur, fuga placeat autem mollitia quidem quos eius est cupiditate harum suscipit ipsa, assumenda ducimus? Voluptate nesciunt odit, tempore eligendi ipsam mollitia ut necessitatibus quidem quo dolorum voluptatibus a neque praesentium perferendis numquam, aspernatur, fuga iste quas cupiditate aut ad ratione. Ipsa odit itaque velit quaerat doloribus!</p>
+       </div>
+       <div class="col-md-5">
+           <img src="img/employe%20400x400.jpg" alt="CEO" class="content-image img-responsive ceter-block">
+       </div>
+   </div>
+    <hr class="divider">
+     <div class="row content">
+         <div class="col-md-5">
+             <img src="img/chief%20of%20marketing%20400x400.jpg" alt="Marketing chief" class="content-image img-responsive ceter-block">
+         </div>
+        <div class="col-md-7 mickey">
+            <h2 class="content-heading">Greetings words from <span class="text-muted">Chief of Marketing</span></h2>
+           <p class="content-par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste odio animi repellat, mollitia esse magnam sapiente soluta laudantium, excepturi amet voluptas ipsa nisi eaque praesentium explicabo a architecto alias voluptatem perspiciatis tenetur. Perferendis nobis, atque ex voluptatibus ducimus placeat eum maiores quia. Cum amet, cumque quibusdam voluptatem vero ex temporibus eveniet neque voluptate consequatur, fuga placeat autem mollitia quidem quos eius est cupiditate harum suscipit ipsa, assumenda ducimus? Voluptate nesciunt odit, tempore eligendi ipsam mollitia ut necessitatibus quidem quo dolorum voluptatibus a neque praesentium perferendis numquam, aspernatur, fuga iste quas cupiditate aut ad ratione. Ipsa odit itaque velit quaerat doloribus!</p>
+        </div>
+     </div>
+       <hr class="divider">
+       <div class="row content">
+            <div class="col-md-7 mickey">
+                  <h2 class="content-heading">Greetings words from <span class="text-muted">Lead of IT Department</span></h2>
+           <p class="content-par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste odio animi repellat, mollitia esse magnam sapiente soluta laudantium, excepturi amet voluptas ipsa nisi eaque praesentium explicabo a architecto alias voluptatem perspiciatis tenetur. Perferendis nobis, atque ex voluptatibus ducimus placeat eum maiores quia. Cum amet, cumque quibusdam voluptatem vero ex temporibus eveniet neque voluptate consequatur, fuga placeat autem mollitia quidem quos eius est cupiditate harum suscipit ipsa, assumenda ducimus? Voluptate nesciunt odit, tempore eligendi ipsam mollitia ut necessitatibus quidem quo dolorum voluptatibus a neque praesentium perferendis numquam, aspernatur, fuga iste quas cupiditate aut ad ratione. Ipsa odit itaque velit quaerat doloribus!</p>
+            </div>
+              <div class="col-md-5">
+                  <img src="img/Lead%20IT%20department.jpg" alt="IT Lead" class="content-image img-responsive ceter-block">
+              </div>
+          </div>
+<!--          content section ends here-->
+  
+<!--  footer starts here-->
+  <footer>
+     
+     <p class="pull-right"><i class="fas fa-sort-up"></i>Move to Top</p>
+      <p class="pull-left">&copy; 2016 Pokemon, Inc. <a href="#">Terms</a> and <a href="#">Conditions </a>&middot; </p>
+  </footer>
+<!--  footer ends here-->
+   
+
+  </body>
+</html>

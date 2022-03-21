@@ -1,0 +1,47 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.col-sm-3{
+    margin:30px -21px 20px 20px;
+    text-align: left;
+}
+
+.sidemeniu>a{
+    background-color: black;
+    color: white;
+    padding: 6px 0;
+   text-align: left;
+    border: solid 2px white;
+    font-size: 19px;
+    width: 150px;
+}
+
+.sidemeniu>a:hover{
+    background-color:white;
+    color: black;
+    padding: 6px 0;
+   text-align: left;
+    border: solid 3px black;
+    font-size: 19px;
+}
+}
+hr{
+    color:black;
+}
+.main{
+    margin-top: 30px;
+    background-color: lightgrey;
+}
+h1{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+
+}
+img{
+    border-radius: 50%;
+    position: relative;
+}

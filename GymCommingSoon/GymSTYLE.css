@@ -1,0 +1,50 @@
+body{
+    background:url(images/background.jpg);
+        no-repeat center center fixed;
+        background-size:cover;
+}
+
+div{
+    background-color:rgb(40,184,115,0.5);
+    width: 1200px;
+    margin:300px auto;
+    text-align:center;
+font-family: 'Poppins', sans-serif;
+    border-radius: 16px;
+     
+}
+button{
+    background:grey;
+    padding:15px;
+    color:black;
+    border-radius: 15px;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    
+}
+h1{
+    font-size:4em;
+}
+p{
+    font-size:2em;
+}
+i{
+    font-size:4em;
+}
+legend{
+    text-align: right;
+    color:white
+}
+fieldset{
+    border: white;
+    
+}
+form{
+    text-align: left;
+}
+option{ font-family: 'Poppins', sans-serif;
+    
+}
+select{font-family: 'Poppins', sans-serif;
+    
+}

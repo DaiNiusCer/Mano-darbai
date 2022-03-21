@@ -1,0 +1,121 @@
+
+
+body{
+    font-family: 'Mukta', sans-serif;
+    margin: 0 auto;
+    z-index: 10;
+
+
+
+}
+nav{
+    background-color: darkviolet;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.nav-item >a{
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-right: solid 1px;
+    border-left: solid 1px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.nav-item >a:hover{
+    background-color: white;
+    color: darkviolet;
+    padding: 4px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+    
+.nav-item>a:active{
+    background-color: white;
+    color: violet;
+    padding: 4px 10px;
+    font-size: 15px;
+}
+h1{
+    font-family: 'Mukta', sans-serif;
+}
+.jumbotron{
+    margin-top: 150px;
+    text-align: center;
+    background-color: transparent;
+}
+.btn{
+    color:white;
+    background-color: darkviolet;
+    border-color: darkviolet;
+    font-size: 32px;
+}
+.btn:hover{
+    background-color: white;
+    color: darkviolet;
+    border-color:darkviolet;
+    font-size: 32px;
+}
+.btn:active{
+    background-color: white;
+    color:violet;
+    border-color:darkviolet;
+}
+span{
+    color:darkviolet;
+}
+.col-lg-4{
+    text-align: justify;
+}
+.col-lg-4 .btn1{
+    color:white;
+    background-color: darkviolet;
+    border-color: darkviolet;
+    font-size: 18px;
+  
+}
+.col-lg-4 .btn1:hover{
+    background-color: white;
+    color: darkviolet;
+    border-color:darkviolet;
+    font-size: 18px;
+}
+.col-lg-4 .btn1:active{
+    background-color: white;
+    color:violet;
+    border-color:darkviolet;
+}
+.col-lg-4>a{
+    text-align: justify;
+}
+.para1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 300px;
+    background-color: darkviolet;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 50px
+    
+    
+    
+}
+img{
+    position: absolute;
+}
+.container{
+  
+}
+.container2{
+height: 150px;
+display: flex;
+align-items: center;
+  justify-content: center;
+  
+}

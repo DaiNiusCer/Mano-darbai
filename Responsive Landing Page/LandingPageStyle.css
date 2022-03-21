@@ -1,0 +1,119 @@
+html{
+    height:100%
+}
+body{
+    background: url(img/bg_2.jpg);
+    background-position: center;
+    top:0;
+    left:0;
+    right: 0;
+    left:0;
+    min-width: 100%;
+    min-height: 100%;
+
+    
+font-family: roboto;
+}
+h1{
+    font-family: roboto;
+    font-size: 50px;
+}
+.btn-primary{
+    background-color: gray;
+    border-color: gray;
+    border-radius: 10px;
+    padding: 1px 8px;
+    
+}
+.btn-primary:hover{
+    background-color: darksalmon;
+    border-color: darkkhaki;
+    color:black;
+    padding: 2px 8px;
+}
+.btn-primary:active{
+    background-color: darksalmon;
+    border-color: darkkhaki;
+    color:black;
+    padding: 2px 8px;
+    margin-left:  50px;
+}
+.btn-outline-success{
+    background-color: gray;
+    border-color: gray;
+    border-radius: 10px;
+    padding: 2px 8px;
+    color: white;
+}
+.btn-outline-success:hover{
+     background-color: darksalmon;
+    border-color: darkkhaki;
+    color:black;
+    padding: 2px 8px;
+}
+.navbar{
+opacity: 0.7;
+}
+.soc-media{
+    color:darksalmon;
+}
+.text{
+    color: darksalmon;
+}
+.btn-success{
+    background-color: darksalmon;
+    border-color: darksalmon;
+}
+.btn-success:hover{
+    background-color: grey;
+    border-color: darksalmon
+}
+.center{
+    text-align: center;
+    padding-top: 5%
+}
+.dropdown-toggle{
+    color: white;
+}
+.dropdown-toggle:hover{
+    color:black;
+}
+.block{
+  float: right;
+    margin-left: 5px;
+
+        
+    
+}
+.fa-facebook-square{
+    color:dodgerblue;
+    padding: 12px 12px;
+    background-color:
+}
+.fa-twitter-square{
+        color:dodgerblue;
+     padding: 12px 12px;
+}
+.fa-google{
+    padding: 12px 12px;
+
+}
+.meniuname{
+    text-align: center
+}
+.row{
+    padding: 35px 250px;
+    background-color: coral;
+    border-radius: 35px;
+    opacity: 0.89;
+  
+ 
+}
+.col-md-12{
+
+    background-color: white;
+    border-radius: 45px;
+}
+nav{
+    z-index: 1;
+}

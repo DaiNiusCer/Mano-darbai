@@ -1,0 +1,101 @@
+body{
+    padding-bottom: 50px;
+    color: #5a5a5a;
+}
+.navbar-wrapper{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    z-index: 25;
+}
+
+.navbar-wrapper .navbar{
+    width: auto;
+}
+.container{
+    width: auto;
+    height: auto;
+}
+.carousel-inner{
+    width: auto;
+    height: auto;
+    margin-bottom: 35px;
+}
+.carousel-inner{
+ height: 500px;
+    width: auto;
+    background-color: #777
+}
+.carousel-inner > .item img{
+    position: absolute;
+    height: 500px;
+    min-width: 100%;
+    top:0;
+    left:0;
+}
+.carousel-caption{
+    margin-bottom: 150px;
+    color: dodgerblue;
+}
+.nav-bar-wrapper .navbar{
+    padding-right: 20px;
+    padding-left: 20x;
+}
+.img-circle{
+    border-radius: 50%;
+        width:140px;
+    height: 140px;
+}
+.team .col-lg-4 {
+    text-align: justify;
+    margin-bottom: 25px;
+}
+.team h2{
+    color: dodgerblue
+}
+.team p{
+    color: dodgerblue;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.divider{
+    margin:30px 0;
+}
+
+.content .mickey{
+    padding-left: 50px;
+    text-align: justify;
+    padding-top: 80px;
+    padding-right: 25px;
+}
+.col-md-5 > img{
+    padding-left: 200px;
+    padding-top: 80px;
+}
+footer{
+    margin-top: 20px;
+}
+.pull-right{
+    float: right;
+    
+}
+.content-heading{
+    color: dodgerblue;
+}
+.nav-link active{
+    color: dodgerblue;
+}
+.container-fluid>a{
+    font-size: 25px;
+    color: dodgerblue;
+}
+.nav-link{
+    text-decoration: none;
+    list-style-type: none;
+    color: dodgerblue;
+    
+    
+    
+}

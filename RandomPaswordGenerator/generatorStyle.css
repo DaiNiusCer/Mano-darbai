@@ -1,0 +1,47 @@
+body{
+
+background: rgba(241,231,103,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(241,231,103,1)), color-stop(100%, rgba(254,182,69,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+background: radial-gradient(ellipse at center, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645', GradientType=1 );
+height: 700px;
+}
+
+.container{
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.input1{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 45px;
+    margin-top: 50px;
+    background-color: cadetblue;
+    border-radius:10px;
+    color: white;
+}
+.input2{
+    background-color: cadetblue;
+    border-radius: 10px;
+    font-size: 25px
+    
+}
+.input3{
+    font-size: 25px;
+    color: black;
+}
+.input4{
+    text-align: center;
+    font-size: 25px;
+    background-color: cadetblue;
+    border-radius:10px;
+    float: right;
+}
+.row{
+    margin: 0 auto;
+}

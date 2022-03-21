@@ -1,0 +1,59 @@
+body{
+    height: absolute;
+    font-family: 'Oswald', sans-serif;
+}
+video{
+    position:fixed;
+    z-index: 1;
+    top:0;
+    left:0;
+    right: 0;
+    left:0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;  
+}
+
+        .tekstas{
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    margin:0 auto;
+    max-width:1050px;
+    margin-top: 250px;
+    font-family: 'Oswald', sans-serif;
+    border: solid 3px rgb(224,26,22);
+    background-color:rgb(233,99,69,0.75);
+    border-radius: 25px
+            
+    }
+
+   
+
+  
+ 
+}
+h1{
+    margin-bottom: 30px;
+    color: grey;
+    font-size: 50px;
+    opacity: 0,8;
+    font-family: 'Oswald', sans-serif;
+}
+p{
+    color:orange;
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+}
+a{
+    display: inline-block;
+    padding: 12px 66px;
+    border: solid 4px;
+    color: darkslategrey;
+    font-family: 'Oswald', sans-serif;
+}
+i{
+    font-size: 3em;
+    color: grey;
+}
+
