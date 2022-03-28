@@ -1,0 +1,283 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+@import url(https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;500&display=swap);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+body{
+  background-color: grey;
+}
+
+header {
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin-bottom: 10px;
+  
+  
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+.meniuLinkai {
+  display: flex;
+  padding: 20px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+  width: 400px;
+  color: white;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.meniuLinkai:hover {
+  border-radius: 20px;
+  border: 3px solid grey;
+  background-color: orange;
+  font-weight: bold;
+}
+/*Meniu pabaiga
+
+/*CRUD /main pradžia*/
+
+/*Formos laukai*/
+h3{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.formuLaukas{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  margin-bottom: 10px;
+}
+.pridetiMotocikla{
+  border:4px solid black;
+  text-align: center;
+  border-radius: 5px;
+
+}
+
+.redaguotiMotocikla{
+  border:4px solid black;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.laukelis{
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+.knopke{
+  width: 80px;
+  background-color: grey;
+  border: 3px solid black;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.knopke:hover{
+  background-color: green;
+}
+.knopke1{
+  width: 80px;
+  background-color: grey;
+  border: 3px solid black;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.knopke1:hover{
+  background-color: yellow;
+}
+
+
+
+
+
+/*Formos laukai*/
+
+
+.motoIsvedimas{
+  display: flex;
+  flex-direction: column;
+}
+h2{
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin: 0 auto;
+  height: 50px;
+  line-height: 50px;
+
+}
+h2:hover{
+  color: white;
+}
+
+
+p{
+  text-align: justify;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  width: 400px;
+  margin: 0 auto;
+}
+.motoIsvedimas>div{
+  background-color: orange;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+  border:4px solid black ;
+  
+}
+
+img{
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.trintiMoto{
+  width: 80px;
+  background-color: grey;
+  border: 3px solid black;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.trintiMoto:hover{
+  background-color: red;
+
+}
+
+.redaguotiMoto{
+  width: 80px;
+  background-color: grey;
+  border: 3px solid black;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.redaguotiMoto:hover{
+  background-color:yellow;
+
+}
+
+
+/*CRUD /main pabaiga*/
+
+
+
+/*Footer pradžia*/
+
+footer {
+  
+  height: 100%;
+  background-color: orange;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  border-radius: 20px;
+}
+
+footer>p {
+  margin: 0 auto;
+  text-align: center;
+  height: 50px;
+  padding-top: 25px;
+}
+
+
+/*Footer pabaiga*/
+
+/*Naujas media*/
+@media(min-width:768px){
+  header {
+   
+    height: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav {
+    display: inline-block;
+  }
+  
+  .meniuLinkai {
+    width: 1050px;
+    font-size: 35px;
+    
+  }
+
+  h3{
+    font-size: 25px;
+  }
+  
+  .laukelis{
+    width: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+p{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+
+
+
+.formuLaukas{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.motoIsvedimas{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.motoKortele{
+  height: 750px;
+  position: relative;
+}
+
+.trintiMoto{
+position: absolute;
+bottom: 5px;
+left:50px
+
+}
+
+.redaguotiMoto{
+position: absolute;
+bottom: 25px;
+right: 50px;
+}
+form:hover{
+background-color: rgba(247, 233, 159, 0.575);
+}
+
+
+
+}
