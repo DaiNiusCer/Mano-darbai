@@ -1,0 +1,8 @@
+
+<h1>{{{title}}}</h1>
+ {{#each vardai}}
+  <div class="visokieVardai">
+   <div><p >{{this.vardas}}</p></div>
+   <div>  <a href="/api/vardai/delete/{{this._id}}"> <button class="trinti" >X</button></a></div>
+</div>
+  {{/each}}

@@ -1,0 +1,109 @@
+<h1>{{title}}</h1>
+<div class="formosLaukas">
+  <!--Filtravimo forma-->
+
+<form action="/seimininkai" method="GET">
+  <h2>Šeimininkų filtras</h2>
+  <div class="seimininkoVardas">
+  <label for="">Įrašykite vardą</label>
+  <br>
+  <input type="text" class="inputai" name="seimininkoVardas" id="seimininkoVardas">
+    </div>
+
+    <div class="seimininkoPavarde">
+    <label for="">Įrašykite pavardę</label>
+    <br>
+     <input class="inputai" type="text" class="" name="seimininkoPavarde" id="seimininkoPavarde">
+     </div>
+     <div class="seimininkoLytis">
+  <label for="lytis">Pasirinkite lytį</label>
+  <br>
+  <select name="lytis" id="lytis">
+    <option value="nepazymėta">-----</option>
+    <option value="vyras">Vyras</option>
+    <option value="moteris">Moteris</option>
+    <option value="nei vyras nei moteris">Kita</option>
+  </select>
+
+</div>
+<div class="seimininkoAmzius">
+    <label for="">Pasirinkite asmens amžių</label>
+    <br>
+     <input type="number" name="metaiNuoSeim" id="metaiNuo" placeholder="Asmens amžius nuo..." class="seimininkoAmzius1">
+
+     <input type="number"   name="metaiIkiSeim" id="metaiIki" placeholder="Asmens amžius iki..." class="seimininkoAmzius1">
+      </div>
+  
+<input type="submit" class="ieskoti">
+</form>
+<!--Filtravimo forma-->
+
+<!--Pridėjimo forma-->
+<form action="/api/seimininkai" method="POST">
+<h2>Pridėk naują klubo narį</h2>
+  <div class="seimininkoVardas">
+  <label for="">Įrašykite vardą</label>
+  <br>
+  <input type="text" class="inputai" name="seimininkoVardas" id="seimininkoVardas">
+    </div>
+
+    <div class="seimininkoPavarde">
+    <label for="">Įrašykite pavardę</label>
+    <br>
+     <input class="inputai" type="text" class="" name="seimininkoPavarde" id="seimininkoPavarde">
+     </div>
+
+<div class="seimininkoLytis">
+  <label for="lytis">Pasirinkite lytį</label>
+  <br>
+  <select name="lytis" id="lytis">
+    <option value="lytis nenurodyta">-----</option>
+    <option value="vyras">Vyras</option>
+    <option value="moteris">Moteris</option>
+    <option value="nei vyras nei moteris">Kita</option>
+  </select>
+
+</div>
+<div class="seimininkoAmzius">
+    <label for="">Įrašykite amžių</label>
+    <br>
+     <input type="number" name="regMetai" id="regMetai" placeholder="Įrašykite savo amžių" class="seimininkoAmzius11">
+      </div>
+<input type="submit" class="ieskoti">
+
+</form>
+
+<!--Pridėjimo forma-->
+
+</div>
+<div class="visasSarasas">
+  <div class="rikiavimas">
+    <br>
+    <form action="/seimininkai" method="GET" class="rikiavimoForma">
+    <select name="rikiavimoTvarkaSeim" id="rikiavimoTvarkaSeim">
+     <option value="null">----</option>
+      <option value="amzius">Rikiuoti pagal metus</option>
+       <option value="vardas">Rikiuoti pagal vardą</option>
+        <option value="lytis">Rikiuoti pagal lytį</option>
+    </select>
+    <br>
+    <select name="didejaMazejaSeim" id="didejaMazejaSeim" class="inputai">
+      <option value="null">---</option>
+      <option value="didejaSeim">Didėjanti tvarka</option>
+      <option value="mazejaSeim">Mažėjanti tvarka</option>
+    </select>
+    <br>
+    <input type="submit" class="rikiuoti" value="Rikiuoti">
+    </form>
+  </div>
+  {{#each seimininkai}}
+  <div class="seiminikeliai">
+    <p >{{this.vardas}}  {{this.pavarde}}  {{this.amzius}}  {{this.lytis}} </p>
+    <a href="/api/seimininkai/delete/{{this._id}}"> <button class="trinti" >X</button></a>
+</div>
+  {{/each}}
+
+</div>
+  <a href="http://localhost:3000/home"><button>Pagrindinis</button></a>
+
+

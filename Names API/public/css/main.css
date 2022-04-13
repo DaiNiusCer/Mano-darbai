@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+  background-color: darkcyan;
+}
+
+.visokieVardai {
+  margin: 0 auto;
+  background-color: aliceblue;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 600px;
+}
+
+p {
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+.trinti {
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+  border: none;
+  opacity: 0.7;
+  border-radius: 10px;
+}

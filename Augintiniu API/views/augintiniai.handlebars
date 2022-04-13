@@ -1,0 +1,99 @@
+<link rel="stylesheet" href="css">
+<h1>{{title}}</h1>
+
+
+<div class="formosLaukas">
+  <!--Filtravimo forma-->
+
+<form action="/augintiniai" method="GET">
+  <h2>Augintinių filtras</h2>
+  <div class="gyvunoTipas">
+  <label for="">Pasirinkite gyvūno tipą:</label>
+  <br>
+  <select name="tipas" id="tipas">
+    <option value="null">----</option>
+    <option value="katė">Katė</option>
+    <option value="šuo">Šuo</option>
+    <option value="šinšilas">Šinšilas</option>
+     <option value="karvė">Karvė</option>
+      <option value="žiurkėnas">Žiurkėnas</option>
+       <option value="avis">Avis</option>
+        <option value="arklys">Arklys</option>
+         <option value="kiaulė">Kiaulė</option>
+          <option value="jautis">Jautis</option>
+           <option value="katinas">Katinas</option>
+    </select>
+    </div>
+
+    <div class="gyvunoAmzius">
+    <label for="">Pasirinkite gyvūno amžių</label>
+    <br>
+     <input type="number" step="0.1" name="metaiNuo" id="metaiNuo" placeholder="Gyvūno metai nuo..." class="gyvunoMetai">
+     <input type="number"  step="0.1" name="metaiIki" id="metaiIki" placeholder="Gyvūno metai iki..." class="gyvunoMetai">
+      </div>
+<div class="skiepytas">
+  <label for="">Skiepytas</label>
+  <input type="checkbox" name="arSkiepytas">
+</div>
+<input type="submit" class="ieskoti" value="Ieškoti">
+</form>
+<!--Filtravimo forma-->
+
+<!--Pridėjimo forma-->
+<form action="/api/augintiniai" method="POST">
+<h2>Pridėk naują augintinį</h2>
+  <div>
+    <label for="gyvunoTipas" class="gyvunoTipas">Gyvūno tipas</label>
+    <br>
+    <input type="text" name="gyvunoTipas" id="gyvunoTipas" class="inputai">
+    </div>
+    <div>
+      <label for="gyvunoVardas" class="gyvunoVardas">Gyvūno vardas</label>
+      <br>
+    <input type="text" name="gyvunoVardas" id="gyvunoVardas" class="inputai">
+    </div>
+ <div>
+  <label for="gyvunoAmzius" class="gyvunoAmzius">Įrašykite gyvūno amžių</label>
+  <br>
+  <input type="number" step="0.1" name="gyvunoAmzius" id="gyvunoAmzius" class="inputai">
+  </div>
+<div class="skiepytas">
+  <label for="skiepytas">Skiepytas</label>
+  <input type="checkbox" name="skiepytas" id="skiepytas">
+</div>
+<input type="submit" class="ieskoti" value="Pridėti augintinį">
+
+</form>
+
+<!--Pridėjimo forma-->
+
+</div>
+<div class="visasSarasas">
+  <div class="rikiavimas">
+    <br>
+    <form action="/augintiniai" method="GET" class="rikiavimoForma">
+    <select name="rikiavimoTvarka" id="rikiavimoTvarka">
+     <option value="null">----</option>
+      <option value="amzius">Rikiavimas pagal metus</option>
+       <option value="vardas">Vardas</option>
+        <option value="tipas">Tipas</option>
+    </select>
+    <br>
+    <select name="didejaMazeja" id="didejaMazeja" class="inputai">
+      <option value="null">---</option>
+      <option value="dideja">Didėjanti tvarka</option>
+      <option value="mazeja">Mažėjanti tvarka</option>
+    </select>
+    <br>
+    <input type="submit" class="rikiuoti" value="Rikiuoti">
+    </form>
+  </div>
+  {{#each pets}}
+  <div class="gyvuniukai">
+    <p class="pavieniaiGyvunai">{{this.tipas}}  {{this.vardas}}  {{this.amzius}}  {{this.skiepytas}} </p>
+    <a href="/api/augintiniai/delete/{{this._id}}"> <button class="trinti" >X</button></a>
+    </div>
+  {{/each}}
+</div>
+ <a href="http://localhost:3000/home"><button>Pagrindinis</button></a>
+

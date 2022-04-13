@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+  background-color: bisque;
+  font-family: 'Ubuntu', sans-serif;
+  background-image: url("pexels-alena-darmel-9040438.jpg");
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-size: 55px;
+  color: beige;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+.formosLaukas {
+  margin-top: 100px;
+  display: flex;
+}
+
+form {
+  border: 2px solid black;
+  width: 500px;
+  height: 650px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  text-align: center;
+  background-color: bisque;
+  opacity: 0.6;
+}
+
+.gyvunoTipas {
+  height: 100px;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+select {
+  height: 50px;
+  width: 330px;
+  margin: 0 auto;
+}
+
+.gyvunoAmzius {
+  height: 100px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.gyvunoMetai {
+  height: 50px;
+  width: 150px;
+}
+
+.gyvunoTipas {
+  height: 100px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.inputai {
+  height: 50px;
+  width: 330px;
+  margin-bottom: 15px;
+}
+
+.gyvunoVardas {
+  height: 100px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.arSkiepytas {
+  height: 100px;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+.skiepytas {
+  height: 50px;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.ieskoti {
+  font-size: 25px;
+  width: 50%;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.ieskoti:hover {
+  background-color: green;
+}
+
+
+.ieskoti1 {
+  font-size: 25px;
+  width: 50%;
+  margin: 40px auto;
+  border: 3px solid black;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.ieskoti1:hover {
+  background-color: green;
+}
+
+.visasSarasas {
+  margin: 25px auto;
+  width: 95%;
+  background-color: bisque;
+  border-radius: 5px;
+  border: 3px solid black;
+  opacity: 0.6;
+}
+
+p {
+  font-weight: bold;
+  width: 100%;
+  height: 50px;
+
+}
+
+.seimininkoVardas {
+  height: 100px;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.seimininkoPavarde {
+  height: 100px;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.seimininkoAmzius {
+  height: 100px;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.seimininkoAmzius1 {
+  height: 50px;
+}
+
+.seimininkoAmzius11 {
+  height: 50px;
+  width: 50px;
+}
+
+.seimininkoLytis {
+  height: 100px;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+select {
+  height: 50px;
+}
+
+p {
+  margin: 25px auto;
+}
+
+.tekstas {
+  color: darkred;
+  width: 30%;
+  text-align: justify;
+}
+
+
+.paveikslas {
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+  height: 550px;
+  border-radius: 50%;
+
+}
+
+.tekstoLaukas {
+  margin: 0 auto;
+  height: 1000px;
+  border-radius: 5px;
+  width: 80%;
+  opacity: 0.9;
+}
+
+.visaInfo {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  height: 1000px;
+}
+
+.mygtukai {
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  padding: 20px 40px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: burlywood;
+}
+
+.gyvuniukai {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100px;
+  margin: 10px;
+}
+
+.trinti {
+  display: flex;
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.seiminikeliai {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100px;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.rikiavimoForma {
+  height: 250px;
+}
