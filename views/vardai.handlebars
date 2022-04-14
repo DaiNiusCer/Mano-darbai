@@ -1,0 +1,51 @@
+
+<h1>{{{title}}}</h1>
+<br>
+<a href="http://localhost:3000/home"><button class="filtruoti">Perkrauti</button></a>
+<!--Vardo filtravimo forma-->
+<form action="/home" method="GET" class="formaPrideti">
+ <h2>Filtruokite vardus</h2>
+     <label for="vardoRaides" class="naujasVardas">Įrašykite ieškomą vardą </label>
+    <br>
+    <br>
+    <input type="text" name="vardoRaides" id="vardoRaides" class="inputai">
+    <br>
+    <input type="submit" class="filtruoti" value="Filtruoti">
+    </form>
+<!--Vardo filtravimo forma-->
+
+
+<!--Vardo pridėjimo forma-->
+<form action="/api/vardai" method="POST"class="formaPrideti" >
+<h2>Pridėkite naujus vardus</h2>
+    <label for="naujasVardas" class="naujasVardas">Įrašykite naują vardą į laukelį</label>
+    <br>
+    <br>
+    <input type="text" name="naujasVardas" id="naujasVardas" class="inputai">
+    <br>
+ <input type="submit" class="prideti" value="Pridėti">
+</form>
+<!--Vardo pridėjimo forma-->
+<!--Sortinimo forma-->
+ <form action="/home" method="GET" class="Forma">
+ <h2>Rikiuokite vardus</h2>
+    <select name="rikiavimasPagalVarda" id="rikiavimasPagalVarda">
+     <option value="null">----</option>
+     <option value="vardas">Vardas</option>
+       </select>
+    <br>
+    <select name="rikiavimasDidejantMazejant" id="rikiavimasDidejantMazejant">
+      <option value="null">---</option>
+      <option value="dideja">Didėjanti tvarka</option>
+      <option value="mazeja">Mažėjanti tvarka</option>
+    </select>
+    <br>
+    <input type="submit" class="rikiuoti" value="Rikiuoti">
+    </form>
+    <!--Sortinimo forma-->
+ {{#each vardai}}
+  <div class="visokieVardai">
+   <div><p >{{this.vardas}}</p></div>
+   <div>  <a href="/api/vardai/delete/{{this._id}}"> <button class="trinti" >X</button></a></div>
+</div>
+  {{/each}}
