@@ -40,9 +40,40 @@ app.use(express.urlencoded({
 }));
 
 app.get('/home', async (req, res) => {
+  //Sortinimo kintamieji pradžia
+  let rikiavimasDidejantMazejant = req.query.rikiavimasDidejantMazejant;
+  let rikiavimasPagalVarda = req.query.rikiavimasPagalVarda;
+  //Sortinimo kintamieji pabaiga
+  //Soritinimo sąlygos pradžia
+  if (rikiavimasDidejantMazejant === undefined || rikiavimasDidejantMazejant === "dideja") {
+    rikiavimasDidejantMazejant = 1
+  } else {
+    rikiavimasDidejantMazejant = -1
+  }
+  if (rikiavimasPagalVarda === undefined || rikiavimasPagalVarda === "null") {
+    rikiavimasPagalVarda = "_id"
+  } else {
+    rikiavimasPagalVarda = "vardas"
+  }
+  //Sortinimo sąlygos pabaiga
+
+  //Filtravimo kintamieji
+  let vardas = req.query.vardoRaides
+  console.log(vardas)
+  //Filtravimo kintamieji
+
+  //Filtravimo sąlygos
+  if (vardas === undefined || vardas === "") {
+    vardas = ["Antanas"]
+  } else {
+    vardas = [req.query.vardoRaides]
+  }
+
+  //Filtravimo sąlygos
+
   res.render('vardai', {
     title: "Surask savo vardą",
-    vardai: await vardaiDuombaze.find().toArray()
+    vardai: await vardaiDuombaze.find({ vardas: { $in: vardas } }).sort({ [rikiavimasPagalVarda]: [rikiavimasDidejantMazejant] }).toArray()
 
   });
 });

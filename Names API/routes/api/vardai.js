@@ -4,6 +4,7 @@ import { ObjectId } from "mongodb";
 
 const routerVardai = express.Router();
 
+
 //Kolekcijos kintamasis
 const collection = client.db("vardai_db").collection("vardai");
 
@@ -25,5 +26,17 @@ routerVardai.get('/delete/:id', async (req, res) => {
   }
 });
 // Vardų trynimas per nuorodą iš DB
+
+//Naujo vardo pridėjimas pradžia
+routerVardai.post("/", (req, res) => {
+  let naujasVardas = {
+    vardas: req.body.naujasVardas
+  }
+  collection.insertOne(naujasVardas);
+  res.redirect("/home")
+})
+
+
+//Naujo vardo pridėjimas pabaiga
 
 export default routerVardai
