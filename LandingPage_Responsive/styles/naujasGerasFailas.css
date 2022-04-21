@@ -1,0 +1,320 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+@import url(https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;500&display=swap);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+header {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.meniuLinkai {
+    display: flex;
+    padding: 20px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    width: 400px;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.meniuLinkai:hover {
+    border-radius: 20px;
+    border: 3px solid grey;
+    background-color: orange;
+    font-weight: bold;
+}
+
+
+/*Baigėsi Meniu baras*/
+
+
+/*Hero dalis*/
+
+.hero_video {
+    width: 100%;
+    position: relative;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.hero_text {
+    z-index: 10;
+    background-color: orange;
+    height: 240px;
+    width: 98%;
+    text-align: center;
+    border-radius: 20px;
+    opacity: 0.8;
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 40px;
+}
+
+.hero_text>p {
+    text-align: center;
+}
+
+.main_about {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Hero dalis baigėsi*/
+
+
+/*About dalis prasidėjo*/
+
+.about1 {
+    height: 120vh;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: repeat(2 1fr);
+    background-color: orange;
+    border-bottom: 2px solid grey;
+}
+
+.text1 {
+    grid-row: 1/1;
+    grid-template-columns: 1/1;
+}
+
+.textSpecial {
+    background-color: orange;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+}
+
+.btn {
+    width: 180px;
+    background-color: grey;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-top: -10px;
+    width: 100%;
+}
+
+.btn:hover {
+    border-radius: 20px;
+    border: 1px solid grey;
+    background-color: orange;
+    font-weight: bold;
+}
+
+.img1 {
+    grid-row: 1/1;
+    grid-column: 2/3;
+    background-image: url(../img/moto1.jpg);
+}
+
+.imgSpecial {
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.text2 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.img2 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-image: url(../img/moto2.jpg);
+}
+
+.about2 {
+    height: 120vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: repeat(2 1fr);
+}
+
+.img3 {
+    grid-row: 1/1;
+    grid-column: 1/1;
+    background-image: url(../img/moto3.jpg);
+}
+
+.text3 {
+    grid-row: 1/1;
+    grid-column: 2/3;
+}
+
+.img4 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-image: url(../img/moto4.jpg);
+}
+
+.text4 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+
+/*About dalis pasibaigė*/
+
+
+/*Susisiek pradžia*/
+
+.kontaktai {
+    height: 50px;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ikonos {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    margin: 0 auto;
+    font-size: 30px;
+    color: white;
+}
+
+
+/*Susisiek pabaiga*/
+
+
+/*Main dalis pasibaigė*/
+
+
+/*Footer pradžia*/
+
+footer {
+    display: none;
+    height: 100%;
+    background-color: orange;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+footer>p {
+    margin: 0 auto;
+    text-align: center;
+    height: 50px;
+    padding-top: 25px;
+}
+
+
+/*Footer pabaiga*/
+
+@media(min-width:768px) {
+    /*Meniu linkai*/
+    .links {
+        width: 100%;
+        height: 85%;
+    }
+    nav {
+        flex-direction: row;
+        height: 60px;
+    }
+    .meniuLinkai {
+        padding: 10px 80px;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+    /*About dalis  pradžia*/
+    .tabletGrid {
+        display: grid;
+        grid-template-columns: repeat(13, 1fr);
+        grid-template-rows: repeat(13, 1fr);
+        height: 80vh;
+    }
+    .img1 {
+        grid-row: 1/14;
+        grid-column: 2/7;
+    }
+    .img2 {
+        grid-row: 1/14;
+        grid-column: 7/12;
+    }
+    .img3 {
+        grid-row: 1/14;
+        grid-column: 2/7;
+    }
+    .img4 {
+        grid-row: 1/14;
+        grid-column: 7/12;
+    }
+    .text1 {
+        grid-row: 1/14;
+        grid-column: 0/2;
+        width: 100%;
+    }
+    .text2 {
+        grid-row: 1/14;
+        grid-column: 12/14;
+    }
+    .text3 {
+        grid-row: 1/14;
+        grid-column: 1/2;
+    }
+    .text4 {
+        grid-row: 1/14;
+        grid-column: 12/14;
+    }
+    .btn {
+        width: 160px;
+        margin-top: -10px;
+    }
+    /*About dalis  pabaiga*/
+    footer {
+        display: block;
+    }
+}
