@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="css">
+<h1>{{title}}</h1>
+<div class="navBar">
+  <a href="/addcar"><button class="navBtn">ADD CAR</button></a>
+</div>
+<!--Filtravimo forma-->
+<form action="/cars" method="GET">
+<h2>Filter Our's cars</h2>
+    <label for="masinosMarke" class="masinosMarke">Write a car brand</label>
+    <br>
+    <input type="text" name="masinosMarke" id="masinosMarke" class="inputas" placeholder="Audi Q5 etc.." >
+    <br>
+   
+  
+ 
+  <label for="kainaNuo" class="kainaNuo">Write car price from</label>
+  <br>
+
+  <input type="number" step="0.01" name="kainaNuo" id="kainaNuo" class="inputas1" placeholder="50000.00 etc" >
+  <label for="kainaIki" class="kainaIki">Write car price up to </label>
+  <input type="number" step="0.01" name="kainaIki" id="kainaIki" class="inputas1" placeholder="50000.00 etc" >
+  
+<br>
+<br>
+<input type="submit" class="ieskoti" value="Find">
+<br>
+
+</form>
+<!--Filtravimo forma-->
+<a href="/cars"><button class="reset">Reset filtering</button></a>
+
+<!--Rikiavimo forma-->
+<form action="/cars" method="GET" class="rikiavimoForma">
+<h2>Sort Our's cars</h2>
+    <select name="rikiuotPagal" id="rikiuotPagal" class="inputas">
+     <option value="null">----</option>
+      <option value="title">Sort by brand</option>
+       <option value="price">Sort by price</option>
+    </select>
+    <br>
+    <select name="rikiavimas" id="rikiavimas" class="inputas">
+      <option value="null">---</option>
+      <option value="didejanti">Ascending</option>
+      <option value="mazejanti">Descending</option>
+    </select>
+    <br>
+    <input type="submit" class="ieskoti" value="Sort">
+    </form>
+<!--Rikiavimo forma-->
+<a href="/cars"><button class="reset">Reset sorting</button></a>
+
+<p>{{puslapiavimas.esamasPuslapis}} / {{puslapiavimas.puslapiuKiekis}}</p>
+<div>
+  <h3>Limits</h3>
+  <div>
+    <a href="./?limit=3">3</a>
+  </div>
+  <div>
+    <a href="./?limit=5">5</a>
+  </div>
+  <div>
+    <a href="./?limit=10">10</a>
+  </div>
+</div>
+<div>
+ 
+</div>
+
+    <div class="allFields">
+   {{#each automobiliai}}
+  <div class="carsCard">
+    <div class="numberPlates"><span>Number plates:</span> {{this.numberplates}}</div>
+    <div class="brand">{{this.title}}</div>
+    <div class="image">
+      <img src="{{this.image}}" alt="">
+    </div>
+    <p class="price">Only: {{this.price}} €</p>
+    <a href="/api/carsList/delete/{{this.ID}}"> <button class="trinti" >Delete</button></a>
+    </div>
+  
+  {{/each}}
+  </div>
+

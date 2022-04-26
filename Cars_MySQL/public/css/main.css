@@ -1,0 +1,212 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+  background-color: lightblue;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navBar {
+  display: flex;
+  height: 50px;
+  background-color: lightblue;
+  opacity: 0.6;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navBtn {
+  height: 25px;
+  margin-left: 20px;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5px;
+  border: 2px solid blue;
+  color: blue;
+  font-weight: bold;
+
+}
+
+.navBtnadd {
+  height: 25px;
+  margin-left: 20px;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 2px solid blue;
+  color: blue;
+  font-weight: bold;
+  float: right;
+  margin-top: 10px;
+  margin-right: 22px;
+}
+
+.reset {
+  background-color: green;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  height: 50px;
+  border: 2px solid black;
+  width: 150px;
+}
+
+.carsCard {
+  margin-bottom: 50px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.numberPlates {
+  height: 50px;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 10px;
+  color: blue;
+}
+
+.image {
+  text-align: center;
+}
+
+img {
+  height: 350px;
+  width: 550px;
+  margin: 0 auto;
+}
+
+.brand {
+  height: 25px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  color: blue;
+}
+
+.price {
+  height: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  color: green;
+}
+
+.trinti {
+  margin-left: 10px;
+  width: 80px;
+  height: 30px;
+  border: 2px solid black;
+  background-color: red;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+form {
+  margin: 0 auto;
+  border: 2px solid blue;
+  text-align: center;
+  width: 450px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputas {
+  margin: 0 auto;
+  height: 80px;
+  width: 60%;
+}
+
+.ieskoti {
+  margin: 0 auto;
+  width: 50%;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.inputas1 {
+  margin: 0 auto;
+  height: 80px;
+  width: 60%;
+  margin-bottom: 15px;
+}
+
+@media(min-width:768px) {
+
+  form {
+    background-color: rgb(167, 167, 218);
+    margin-bottom: 50px;
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+
+  .allFields {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+  }
+
+  .carsCard {
+    width: 500px;
+
+  }
+
+  img {
+    width: 500px;
+  }
+
+  .navBtnadd {
+    font-weight: bold;
+    float: none;
+    margin-top: 50px;
+    margin-right: 22px;
+    margin: 0 auto;
+  }
+
+  .ieskoti {
+    height: 100px;
+    background-color: green;
+    border: 2px solid black;
+    font-weight: bold;
+  }
+
+  .pagination {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: lightblue;
+
+  }
+
+  .next {
+    width: 150px;
+    height: 80px;
+  }
+
+
+}

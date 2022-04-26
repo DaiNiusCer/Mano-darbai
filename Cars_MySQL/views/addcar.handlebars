@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="css">
+<h1>{{title}}</h1>
+
+<form action="/api/carsList" method="POST">
+<h2>Add new car</h2>
+  
+    <label for="masinosMarke" class="masinosMarke">Write a car brand</label>
+    <br>
+    <input type="text" name="masinosMarke" id="masinosMarke" class="inputas" placeholder="Audi Q5 etc.." required>
+    <br>
+    <label for="masinosNumeriai" class="masinosNumeriai">Write a car platenumbers</label>
+    <br>
+    <input type="text" name="masinosNumeriai" id="masinosNumeriai" class="inputas" placeholder="ABC123.." required>
+    <br>
+  
+      <label for="pavNuoroda" class="nuoroda">Paste image URL</label>
+      <br>
+    <input type="text" name="pavNuoroda" id="pavNuoroda" class="inputas" placeholder="https://www.bmwusa.com/all-bmws.html etc." required>
+  <br>
+ 
+  <label for="kaina" class="kaina">Write car price</label>
+  <br>
+
+  <input type="number" step="0.01" name="kaina" id="kaina" class="inputas" placeholder="50000.00 etc" required>
+  
+<br>
+<br>
+<input type="submit" class="ieskoti" value="Add car">
+<br>
+
+</form>
+<a href="/cars"><button class="navBtnadd">CARS</button></a>
