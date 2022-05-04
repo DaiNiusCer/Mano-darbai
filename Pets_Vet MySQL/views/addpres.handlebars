@@ -1,0 +1,47 @@
+<h1>{{title}}</h1>
+
+<form  >
+    <label for="pet_id" class="name">Write a pet ID</label>
+    <br>
+    <input type="number" name="pet_id" id="pet_id"  step="1" class="inputas" placeholder="1 (etc.)" >
+    <br>
+    <label for="medication_id" class="name">Write a medication ID</label>
+    <br>
+    <input type="number" name="medication_id" id="medication_id" step="1" class="inputas" placeholder="1 (etc.)" >
+    <br>
+    <label for="comments" class="dob">Write some comments</label>
+    <br>
+    <input type="text" name="comments" id="comments" class="inputas" placeholder="3 x times a day etc.." >
+   
+<br>
+<br>
+<input type="submit" class="logsai1" value="Add prescription">
+<br>
+</form>
+
+<a href="/pets"><button class="logsai">Main</button></a>
+<script>
+    document.querySelector("form").addEventListener("submit",(e)=>{
+        e.preventDefault();
+        let petid=e.target.elements.pet_id.value;
+        let medid=e.target.elements.medication_id.value;
+        let comments=e.target.elements.comments.value;
+       
+        fetch("http://localhost:5000/v1/prescriptions", {
+    method: "POST",
+    headers: {
+      'Accept': 'application/json, text/plain,*/*',
+      'Content-Type': 'application/json'
+    },
+
+    body: JSON.stringify({ medication_id: medid, pet_id:petid,comment:comments })
+  })
+   
+   .then(()=>{
+     alert('Inserted!')
+     location.reload() 
+   })
+
+
+    });
+</script>

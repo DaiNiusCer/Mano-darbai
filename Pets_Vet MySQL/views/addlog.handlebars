@@ -1,0 +1,45 @@
+<h1>{{title}}</h1>
+<form  >
+    <label for="pet_id" class="name">Write a pet id</label>
+    <br>
+    <input type="number" name="pet_id" id="pet_id" class="inputas" step="1" min="1" placeholder="1 etc..." >
+    <br>
+    <label for="description" class="dob">Write disease discription</label>
+    <br>
+    <input type="text" name="description" id="description" class="inputas" placeholder="Swine flu etc...." >
+    <br>
+  <label for="status" class="inputas">Provide pet status </label>
+      <br>
+    <input type="text" name="status" id="status" class="inputas" placeholder="Ill or healthy">
+<br>
+<br>
+<input type="submit" class="logsai1" value="Add log">
+<br>
+</form>
+<a href="/pets"><button class="logsai">Main</button></a>
+<script>
+
+  document.querySelector("form").addEventListener("submit",(e)=>{
+    e.preventDefault()
+   let petid=(e.target.elements.pet_id.value)
+   let description=(e.target.elements.description.value)
+   let status=(e.target.elements.status.value)
+   
+   fetch("http://localhost:5000/v1/logs", {
+    method: "POST",
+    headers: {
+      'Accept': 'application/json, text/plain,*/*',
+      'Content-Type': 'application/json'
+    },
+
+    body: JSON.stringify({ pet_id: petid, description: description,status:status })
+  })
+   
+   .then(()=>{
+     alert('Inserted!')
+     location.reload() 
+   })
+
+  })
+
+</script>

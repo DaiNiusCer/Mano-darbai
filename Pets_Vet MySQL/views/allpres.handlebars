@@ -1,0 +1,25 @@
+<h1>{{title}}</h1>
+
+{{#each allpres}}
+ <div class="petCard">
+      <p>
+        <span>Prescription id:</span>
+        {{this.id}}
+        <br />
+        <span>Pet id:</span>
+        {{this.pet_id}}
+        <br>
+        <span>Medication id:</span>
+        {{this.medication_id}}
+        <br />
+        <span>Comments:</span>
+        {{this.comment}}
+        <br>
+        <span>Time Stamp</span>
+        {{this.timestamp}}
+      </p>
+      
+    </div>
+    
+     {{/each}}
+     <a href="/pets"> <button class="logsai">Main</button></a>

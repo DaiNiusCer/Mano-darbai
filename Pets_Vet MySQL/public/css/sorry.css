@@ -1,0 +1,46 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  font-family: 'Bebas Neue', cursive;
+  margin: 0 auto;
+  background-image: url("./../images/pexels-kampus-production-8734473.jpg");
+  background-size: cover;
+  text-align: center;
+}
+
+h1 {
+  height: 100px;
+  font-size: 45px;
+  text-align: center;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+}
+
+.logsai2 {
+  height: 50px;
+  width: 100px;
+  background-color: darkorange;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.logsai2:hover {
+  background-color: green;
+}
+
+.logsai {
+  height: 50px;
+  width: 100px;
+  background-color: darkorange;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.logsai:hover {
+  background-color: green;
+}

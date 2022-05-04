@@ -1,0 +1,47 @@
+<div class="meniuBar">
+<h1>{{title}}</h1> 
+<a href="/addpet"> <button class="logsai">+ add pet</button></a>
+<a href="/addpres"> <button class="logsai">+ add prescription</button></a>
+<a href="/allpres"> <button class="logsai">all prescriptions</button></a>
+</div>
+
+<div class="allFields">
+  {{#each pets}}
+    <div class="petCard">
+      <p>
+        <span>Pet id:</span>
+        {{this.id}}
+        <br>
+        <span>Pet name:</span>
+        {{this.name}}
+        <br />
+        <span>Date of birth:</span>
+        {{this.dob}}
+        <br />
+        <span>email:</span>
+        {{this.client_email}}
+      </p>
+      <br />
+      <div class="btnFields">
+        <a href="/viewlogs/{{this.id}}"> <button class="logsai">View Log</button></a>
+
+        <button class="trinti" id="{{this.id}}">Delete</button>
+
+      </div>
+    </div>
+
+  {{/each}}
+</div>
+
+<script>
+  document.querySelectorAll('.trinti').forEach(item => {
+  item.addEventListener('click', (e) => { 
+  let id=e.target.id
+  
+  fetch(`http://localhost:5000/v1/pets/${id}`, { method: "DELETE" })
+  
+  
+  location.reload() 
+  }) 
+    })
+</script>

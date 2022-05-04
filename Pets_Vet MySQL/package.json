@@ -1,0 +1,18 @@
+{
+  "name": "keliu_dienu_projektas_su_4_lentelemis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "express-handlebars": "^6.0.5",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15"
+  }
+}

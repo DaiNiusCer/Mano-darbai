@@ -1,0 +1,135 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  font-family: 'Bebas Neue', cursive;
+  margin: 0 auto;
+  background-image: url("./../images/pexels-kampus-production-8734473.jpg");
+  background-size: cover;
+  text-align: center;
+}
+
+.meniuBar {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+h1 {
+  height: 100px;
+  font-size: 45px;
+  text-align: center;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+}
+
+.allFields {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.petCard {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+.btnFields {
+  width: 350px;
+  height: 100px;
+  margin: 0 a;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logsai {
+  height: 50px;
+  width: 100px;
+  background-color: darkorange;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.logsai:hover {
+  background-color: green;
+}
+
+.trinti {
+  height: 50px;
+  width: 100px;
+  background-color: darkorange;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.trinti:hover {
+  background-color: red;
+}
+
+p {
+  font-size: 30px;
+}
+
+span {
+  font-weight: bold;
+}
+
+form {
+  margin: 0 auto;
+  background-color: bisque;
+  opacity: 0.8;
+  margin-bottom: 100px;
+  width: 500px;
+}
+
+input {
+  height: 50px;
+  width: 250px;
+}
+
+.logsai1 {
+  height: 50px;
+  width: 100px;
+  background-color: darkorange;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.logsai1:hover {
+  background-color: green;
+}
+
+.logsai2 {
+  height: 50px;
+  width: 100px;
+  background-color: darkorange;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.logsai2:hover {
+  background-color: green;
+}

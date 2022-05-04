@@ -1,0 +1,48 @@
+<h1>{{title}}</h1>
+
+<form  >
+    <label for="name" class="name">Write a pet name</label>
+    <br>
+    <input type="text" name="name" id="name" class="inputas" placeholder="Bobby" >
+    <br>
+    <label for="dob" class="dob">Write pet date of birth</label>
+    <br>
+    <input type="text" name="dob" id="dob" class="inputas" placeholder="2010 AUG 01" >
+    <br>
+  <label for="client_email" class="inputas">Provide Your's email </label>
+      <br>
+    <input type="email" name="client_email" id="client_email" class="inputas" placeholder="example@example.com">
+<br>
+<br>
+<input type="submit" class="logsai1" value="Add pet">
+<br>
+</form>
+
+<a href="/pets"><button class="logsai">Main</button></a>
+
+<script>
+
+  document.querySelector("form").addEventListener("submit",(e)=>{
+    e.preventDefault()
+   let name=(e.target.elements.name.value)
+   let dob=(e.target.elements.dob.value)
+   let email=(e.target.elements.client_email.value)
+   
+   fetch("http://localhost:5000/v1/pets", {
+    method: "POST",
+    headers: {
+      'Accept': 'application/json, text/plain,*/*',
+      'Content-Type': 'application/json'
+    },
+
+    body: JSON.stringify({ name: name, dob: dob,client_email:email })
+  })
+   
+   .then(()=>{
+     alert('Inserted!')
+     location.reload() 
+   })
+
+  })
+
+</script>

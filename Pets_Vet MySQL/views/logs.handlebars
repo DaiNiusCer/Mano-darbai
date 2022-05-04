@@ -1,0 +1,22 @@
+<h1>{{title}}</h1>
+
+<a href="/addnewlog"> <button class="logsai2">+ add a new log</button></a>
+
+{{#each logs}}
+
+ <div class="petCard">
+      <p>
+        <span>Pet id:</span>
+        {{this.id}}
+        <br />
+        <span>Discription:</span>
+        {{this.description}}
+        <br />
+        <span>Status:</span>
+        {{this.status}}
+      </p>
+     
+    </div>
+   
+     {{/each}}
+      <a href="/pets"> <button class="logsai">Main</button></a>
