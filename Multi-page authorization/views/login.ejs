@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head')%>
+</head>
+<body>
+  <div class="forma2">
+  <form action="/login" method="POST" class="loginForm">
+   
+    <h2><%=title%></h2>
+  
+      <label for="email" class="input">Provide Your's email</label>
+      <br>
+      <input type="email" name="email" id="email" class="inputas" placeholder="example@example">
+      <br>
+      <label for="password" class="password">Write password to login</label>
+      <br>
+      <input type="password" name="password" id="pass" class="inputas" placeholder="At least 8 chars a-z,1-9,A-Z required" >
+      <br> 
+      <br>
+      <input type="submit" class="ieskoti" value="Log In">
+    </form>
+
+    <div class="buttons">
+      <a href="/register"> <button class="btn">Register</button></a>
+      <a href="/bars"> <button class="btn">Main</button></a>
+     </div>
+  </div>
+</body>
+</html>

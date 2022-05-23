@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head')%>
+</head>
+<body>
+  <div class="pridetiBara">
+    <form action="/addbar" method="POST" class="baropridejimoforma">
+      <h2><%=title%></h2>
+          <label for="photo" class="inputas">Paste a bar photo URL</label>
+          <br>
+          <input type="text" name="photo" id="photo" class="inputas">
+          <br>
+        <label for="title" class="inputas">Write bar title</label>
+        <br>
+        <input type="text" name="title" id="title" class="inputas" placeholder="Garage etc" >
+        <br>
+        <label for="adress" class="inputas" >Write bar adress </label>
+        <br>
+        <input type="text" name="adress" id="adress" class="inputas" placeholder="Warsawa,Poland" >
+      <br>
+      <label for="rate" class="inputas">Choose popularity rate</label>
+      <br>
+      <select name="rate" id="rate" class="inputas">
+        <option value="null">---</option>
+        <option value="★☆☆☆☆">★☆☆☆☆</option>
+        <option value="★★☆☆☆">★★☆☆☆</option>
+        <option value="★★★☆☆">★★★☆☆</option>
+        <option value="★★★★☆">★★★★☆</option>
+        <option value="★★★★★">★★★★★</option>
+      </select>
+      <br>
+      <label for="price_rate" class="inputas">Choose price rate</label>
+      <br>
+      <select name="price_rate" id="price_rate" class="inputas">
+        <option value="null">---</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <br>
+      <input type="submit" class="ieskoti" value="Add">
+      <br>
+      </form>
+      <div class="pagr">
+      <a href="/"><button class="reset">Main</button></a>
+    </div>
+  </div>
+</body>
+</html>

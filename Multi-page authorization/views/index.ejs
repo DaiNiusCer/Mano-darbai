@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head')%>
+  <link rel="stylesheet" href="bower_components/css-star-rating/dist/css/star-rating.css">
+</head>
+<body>
+  <%- include('partials/header')%>
+<div class="loginOrRegister">
+<%- include('partials/buttons')%>
+ 
+</div>
+  <div class="formuLaukai">
+    <!--Filtravimo forma pradžia-->
+    <div class="fitravimas">
+      <form action="/bars" method="GET">
+        <h2>Filter Our's bars</h2>
+            <label for="baroPavadinimas" class="baroPavadinimas">Write a bar title</label>
+            <br>
+            <input type="text" name="title" id="baroPavadinimas" class="inputas" placeholder="London etc.." >
+            <br>
+          <label for="vertinimasNuo" class="vertinimasNuo">Write price rate from</label>
+          <br>
+          <input type="number" step="1" name="vertinimasNuo" id="vertinimasNuo" class="inputas" placeholder="1 etc" >
+          <br>
+          <label for="vertinimasIki" class="vertinimasIki">Write price rate up to </label>
+          <br>
+          <input type="number" step="1" name="vertinimasIki" id="vertinimasIki" class="inputas" placeholder="2 etc" >
+        <br>
+        <br>
+        <input type="submit" class="ieskoti" value="Find">
+        <br>
+        </form>
+        <a href="/bars"><button class="reset">Reset filtering</button></a>
+    </div>
+     <!--Filtravimo forma pabaiga-->
+
+     <!--Rikiavimo forma pradžia-->
+     <div class="rikiavimas">
+      <form action="/bars" method="GET" class="rikiavimoForma">
+        <h2>Sort Our's bars list</h2>
+            <select name="rikiuotiPagal" id="rikiuotPagal" class="inputas">
+             <option value="null">----</option>
+              <option value="title">Sort by name</option>
+               <option value="price_rate">Sort by price rate</option>
+            </select>
+            <br>
+            <select name="rikiavimas" id="rikiavimas" class="inputas">
+              <option value="null">---</option>
+              <option value="didejanti">Ascending</option>
+              <option value="mazejanti">Descending</option>
+            </select>
+            <br>
+            <input type="submit" class="ieskoti1" value="Sort">
+            </form>
+            <a href="/bars"><button class="reset">Reset sorting</button></a>
+     </div>
+     <!--Rikiavimo forma pabaiga-->
+
+  </div>
+  <div class="bigFrame">
+<%bars.forEach(item=>{%>
+<div class="smallFrame">
+<div class="image">
+  <img src="<%=item.photo%>" alt="">
+</div>
+<div class="text">
+  <h2 class="title"><%=item.title%></h2>
+  <h3 class="adress"><%=item.adress%></h3>
+  <!--Panaudojama isAuth kuri grąžina true arba false jeigu norima kad atsirastu autorizuotėms mygtukas naujas-->
+  <% if(auth){ %>
+  <button class="trinti"  onclick="trinti('<%=item.id%>')">X</button>
+  <% }%>
+  <!--Panaudojama isAuth kuri grąžina true arba false jeigu norima kad atsirastu autorizuotėms mygtukas naujas-->
+  <div class="rates">
+    <h4 class="stars">
+      Rating:
+      <br>
+      <%=item.rate%></h4>
+    <h4 class="money">
+     Price rate:
+     <br>
+      <%=item.price_rate%>
+    <br>
+    
+  </h4>
+    
+  </div>
+</div>
+</div>
+<% })%>
+</div>
+</body>
+<script>
+  //Logout scriptas
+  const logout = () => {
+  document.cookie = 'token=; Max-Age=0'
+  window.location.replace('/')
+  }
+  //Logout scriptas
+
+
+  const trinti=(id)=>{
+    //Pasirašo delete pilnas adresas
+    fetch(`addbar/bars/${id}`, { method: 'DELETE' })
+    .then(window.location.replace('/'))
+
+   
+  }
+  </script>
+</html>
