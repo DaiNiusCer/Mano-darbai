@@ -1,0 +1,11 @@
+<% if(auth){ %>
+  <a href="/addblog"><button class="ieskoti">Add blog</button></a>
+  <a href="/logout"><button class="ieskoti"  onclick="logout()">Logout</button></a>
+  
+  <% } else{ %>
+    <a href="/login"><button class="ieskoti">Login</button></a>
+    <span><p>or</p></span>
+    <a href="/register"><button class="ieskoti">Register</button></a>
+  <span> <p>to get more features</p></span>
+   
+  <% } %>

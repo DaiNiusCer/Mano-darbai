@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head')%>
+</head>
+<body>
+  <% if(userName != '') { %>
+    <h1 style="background-color: lightgreen; color: green; height: 100px; display: flex; justify-content: center; align-items: center;">Your form has been submitted! Thank you, <%= userName %></h1>
+  <% } %>
+  <div class="forma">
+    <form action="/register" method="POST" class="registracija">
+      <h2><%=title%></h2>
+      <label for="name" class="input">Create Your's name</label>
+      <br>
+      <input type="text" name="name" id="name" class="inputas" placeholder="jOHN 25">
+      <br>
+      <label for="email" class="input">Provide Your's email</label>
+      <br>
+      <input type="email" name="email" id="email" class="inputas" placeholder="example@example">
+      <br>
+      <label for="pass" class="password">Write password</label>
+      <br>
+      <input type="password" name="password" id="pass" class="inputas" placeholder="At least 8 chars a-z,1-9,A-Z required" >
+      <br>
+       <label for="repeatedPassword" class="input">Repeat password</label>
+      <br>
+      <input type="password" name="repeatedPassword" id="pass" class="inputas" placeholder="At least 8 chars a-z,1-9,A-Z required" >
+      <br>
+      <input type="submit" class="ieskoti" value="Register">
+    </form>
+    <br>
+    <br>
+    <div class="buttons">
+      <a href="/login"> <button class="ieskoti">Login</button></a>
+      <a href="/home"> <button class="ieskoti">Main</button></a>
+     </div>
+  </div>
+ 
+</body>
+</html>

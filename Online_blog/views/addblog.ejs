@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head')%>
+</head>
+<body>
+  <div class="pridetiBloga">
+    <form action="/addblog" method="POST" class="blogoForma">
+      <h2><%=title%></h2>
+        <label for="title" class="inputas">Write blog title</label>
+        <br>
+        <input type="text" name="title" id="title" class="inputas" placeholder="About dogs etc..." >
+        <br>
+        <label for="content" class="inputas" >Write some content </label>
+        <br>
+        <textarea id="content" name="content" rows="20" cols="80">
+         
+          </textarea>
+      <br>
+      <input type="submit" class="ieskoti" value="Add">
+      <br>
+      </form>
+      <div class="pagr">
+      <a href="/"><button class="ieskoti">Main</button></a>
+    </div>
+  </div>
+</body>
+</html>

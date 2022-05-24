@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head')%>
+  <title>Blog about everything</title>
+</head>
+<body>
+  <div class="bigFrame">
+   
+    <h1> Hello Dear, <br> <%=token.name%> !</h1>
+    
+    <div class="loginOrRegister">
+      <a href="/addblog"><button class="ieskoti">Add blog</button></a>
+      <a href="/logout"><button class="ieskoti"  onclick="logout()">Logout</button></a>
+       
+      </div>
+    <div class="rikiavimas">
+      <form action="/home" method="GET" class="rikiavimoForma">
+        <h2>Sort Your's records </h2>
+            <select name="rikiuotiPagal" id="rikiuotPagal" class="inputas">
+             <option value="null">----</option>
+              <option value="title">Sort by title</option>
+               <option value="id">Sort by id</option>
+               <option value="created_at">Sort by created time</option>
+            </select>
+            <br>
+            <select name="rikiavimas" id="rikiavimas" class="inputas">
+              <option value="null">---</option>
+              <option value="didejanti">Ascending</option>
+              <option value="mazejanti">Descending</option>
+            </select>
+            <br>
+            <input type="submit" class="ieskoti" value="Sort">
+            </form>
+            <a href="/home"><button class="reset">Reset sorting</button></a>
+     </div>
+<%blogs.forEach(item=>{%>
+  <div class="content">
+    <div class="content_id">Blog ID: <%=item.id%></div>
+    <div class="content_title"><%=item.title%></div>
+    <div class="content_contents"><p><%=item.content%></p></div>
+    <% if(auth){ %>
+      <p>Delete:</p><button class="trinti"  onclick="istrinti('<%=item.id%>')">X</button>
+      <% }%>
+  </div>
+  <%})%>
+  </div>
+</body>
+</html>
+<script>
+
+  const logout = () => {
+  document.cookie = 'token=; Max-Age=0'
+  window.location.replace('/home')
+  }
+  
+  const istrinti=(id)=>{
+    
+    fetch(`addblog/blogs/${id}`, { method: 'DELETE' })
+    .then(window.location.replace('/user'))
+
+   
+  }
+  
+  </script>

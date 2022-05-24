@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head')%>
+</head>
+<body>
+  <div class="forma2">
+  <form action="/login" method="POST" class="prisijungimas">
+   
+    <h2><%=title%></h2>
+  
+      <label for="name" class="input">Provide Your's user name</label>
+      <br>
+      <input type="text" name="name" id="name" class="inputas" placeholder="JOHN 25">
+      <br>
+      <label for="password" class="password">Write password to login</label>
+      <br>
+      <input type="password" name="password" id="pass" class="inputas" placeholder="At least 8 chars a-z,1-9,A-Z required" >
+      <br> 
+      <br>
+      <input type="submit" class="ieskoti" value="Log In">
+    </form>
+
+    <div class="buttons">
+      <a href="/register"> <button class="ieskoti">Register</button></a>
+      <a href="/home"> <button class="ieskoti">Main</button></a>
+     </div>
+  </div>
+</body>
+</html>
